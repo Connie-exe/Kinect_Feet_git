@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bea0f7f3ad39d24ab4d376fa2e7a7d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mBodySourceManager: {fileID: 0}
-  mJointObject: {fileID: 0}
+  mBodySourceManager: {fileID: 1698423885}
+  mJointObject: {fileID: 3717792884230216819, guid: e9a2e4ec42040084d895ba11d6da9d05, type: 3}
 --- !u!1 &716011529
 GameObject:
   m_ObjectHideFlags: 0
