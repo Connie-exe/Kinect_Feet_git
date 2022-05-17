@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
     private void Update()
     {
         //Movement
-        transform.position += mMovementDirection * Time.deltaTime * 0.5f;
+        //transform.position += mMovementDirection * Time.deltaTime * 0.5f;
 
         //Rotation
     }
@@ -35,5 +35,29 @@ public class Ball : MonoBehaviour
     {
         mMovementDirection = new Vector2(Random.Range(0, 100) * 0.01f, Random.Range(0, 100) * 0.01f);
         yield return new WaitForSeconds(3.0f);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Left"))
+        {
+            Debug.Log("Left!");
+            this.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("Right"))
+        {
+            Debug.Log("Right!");
+            this.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("Up"))
+        {
+            Debug.Log("Up!");
+            this.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("Down"))
+        {
+            Debug.Log("Down!");
+            this.gameObject.SetActive(false);
+        }
     }
 }

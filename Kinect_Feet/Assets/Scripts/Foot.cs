@@ -23,15 +23,15 @@ public class Foot : MonoBehaviour
     //    }
     //}
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!other.gameObject.CompareTag("Ball"))
-        {
-            return;
-        }
-        if (other.gameObject.CompareTag("Ball"))
-        {
-            other.gameObject.SetActive(false);
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (!other.gameObject.CompareTag("Ball"))
+    //    {
+    //        return;
+    //    }
+    //    if (other.gameObject.CompareTag("Ball"))
+    //    {
+    //        other.gameObject.SetActive(false);
+    //    }
+    //}
 }
